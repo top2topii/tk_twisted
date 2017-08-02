@@ -33,7 +33,8 @@ def click_open_webbrowser():
     if platform == 'darwin':
         webbrowser.get("open -a /Applications/Google\ Chrome.app %s").open_new_tab('http://127.0.0.1:8080/')
     elif platform == 'win32':
-        webbrowser.get("chrome").open_new_tab('127.0.0.1:8080')
+        webbrowser.register('chrome', None, webbrowser.BackgroundBrowser("C:/Program Files (x86)/Google/Chrome/Application/chrome.exe"))
+        webbrowser.get("chrome").open_new_tab('http://127.0.0.1:8080/')
 
 # Menu exit
 def menu_quit():
