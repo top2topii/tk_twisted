@@ -12,6 +12,6 @@ mccabe==0.6.1
 pylint==1.7.2
 six==1.10.0
 Twisted>=20.3.0
-Werkzeug==0.12.2
+werkzeug>=0.15.3
 wrapt==1.10.10
 zope.interface==4.4.2
